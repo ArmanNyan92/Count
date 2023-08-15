@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.count{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	width: 300px;
+	height: 100px;
+	border: 3px solid rgba(155, 155, 155, .4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+	color: rgba(63, 50, 50, 0.7);
+	border-radius: 12px;
+	background: linear-gradient(120deg, rgb(141, 219, 204), rgb(187, 159, 178));
+}
+
+.text {
+	font-size: 60px;
+	font-family: 'Merienda', sans-serif;
+	margin: 1rem auto;
+	color: #86090961;
+	background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+	background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+	background-size: 110px 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: flick 1.6s infinite;
+	}
+	
+	@keyframes flick {
+		0% {
+			background-position: top left;
+		}
+	
+		100% {
+			background-position: top right;
+		}
+	}
+
+
+button{
+	margin: 10px;
+	cursor: pointer;
+	padding: 3px 40px;
+	border-radius: 6px;
+	font-size: 25px;
+	background-color: rgb(141, 219, 204);
+}
+
+
+.minus{
+	position: absolute;
+	top: 45%;
+	left: 28%;
+}
+
+.tadam-minus{
+	position: absolute;
+	top: 45%;
+	left: 28%;
+	cursor: not-allowed;
+}
+
+.zero{
+	position: absolute;
+	top: 60%;
+	left: 46%;
+}
+
+.tadam-zero{
+	position: absolute;
+	top: 60%;
+	left: 46%;
+	cursor: not-allowed;
+}
+
+.plus{
+	position: absolute;
+	top: 45%;
+	right: 28%;
+}
+
+.tadam-plus{
+	position: absolute;
+	top: 45%;
+	right: 28%;
+	cursor: not-allowed;
+}
